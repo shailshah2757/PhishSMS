@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000cc</color>
+    <color name="light_gray">#edf2f7</color>
+    <color name="fetch_sms1">#F0A12C</color>
+    <color name="fetch_sms2">#F06406</color>
+    <color name="url1">#C11CDD</color>
+    <color name="url2">#526AEE</color>
+    <color name="top_bg">#EEEBEB</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="PhishSMS"
+                android:textColor="@color/black"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_heading_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_heading"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Detect your SMS here!"
+                android:textColor="@color/black"
+                android:textSize="27sp" />
+
+            <ImageView
+                android:id="@+id/iv_home_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_heading"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sms_phising_bg" />
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_home_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/sign_in"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_sign_in"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/sign_up"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

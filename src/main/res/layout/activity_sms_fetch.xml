@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSFetchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Welcome"-->
+<!--                android:id="@+id/welcome"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="25sp"-->
+<!--                android:layout_centerHorizontal="true" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/welcome"-->
+<!--                android:text="Name"-->
+<!--                android:id="@+id/userName"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_centerHorizontal="true" />-->
+
+            <TextView
+
+                android:id="@+id/tv_sms_fetch_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/fetch_heading"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fetch_sms"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_sms_fetch_heading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:onClick="READ_SMS"
+                android:backgroundTint="@color/blue"
+                android:text="@string/btn_fetch_screen"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_fetch_sms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:text="Sign Out"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_fetch_sms"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_sign_out"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:minHeight="48dp"
+                android:prompt="@string/spinner_title" />
+
+            <TextView
+                android:id="@+id/tv_fetch_sms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_fetch_sms"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            
+            <Button
+                android:id="@+id/btn_submit_sms"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_fetch_sms"
+                android:layout_marginTop="200dp"
+                android:text="Submit SMS"
+                android:textSize="20sp"
+                android:backgroundTint="@color/blue"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_submit_sms"
+                android:text="Address TextView"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_address"
+                android:text="Body TextView"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
